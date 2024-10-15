@@ -43,6 +43,7 @@ jobs:
 
 
   test-code:
+    needs: build-code
     runs-on: ubuntu-latest
     steps: 
       - name: Production Phase
