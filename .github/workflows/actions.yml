@@ -36,3 +36,12 @@ jobs:
           cat build/testfile.txt
           echo "Test 2" >> build/testfile.txt
           cat build/testfile.txt
+          echo "The testing is completed, moving to production"
+
+  product:
+    runs-on: alpine
+    steps:
+      - uses: actions/checkout@v4
+      - name: Production Phase
+        run: |
+          echo "This is production phase"
