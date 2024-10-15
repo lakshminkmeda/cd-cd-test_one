@@ -54,7 +54,7 @@ jobs:
       - name: Production Phase
         run: |
           ls  
-          if test -f "build/testfile.txt"; then
+          if test -f "testfile.txt"; then
             echo "File exists."
           else
             echo "File does not exist."
