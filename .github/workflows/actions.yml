@@ -53,8 +53,8 @@ jobs:
           name: my-artifact
       - name: Production Phase
         run: |
-        ls  
-        if test -f "build/testfile.txt"; then
+          ls  
+          if test -f "build/testfile.txt"; then
             echo "File exists."
           else
             echo "File does not exist."
