@@ -45,8 +45,14 @@ jobs:
   test-code:
     needs: build-code
     runs-on: ubuntu-latest
+
     steps: 
       - name: Production Phase
         run: |
           echo "This is production phase"
+      - name: Download artifact from build
+        uses: actions/download-artifact@v4 
+        with: 
+          name: my-artifact
+        run: |  
           test -f build/testfile.txt
