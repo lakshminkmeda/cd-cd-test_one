@@ -38,6 +38,6 @@ jobs:
           mkdir build
           touch build/testfile.txt
           echo "Test 1" >> build/testfile.txt
-          cat mkdir/textfile.txt
+          cat mkdir/testfile.txt
           echo "Test 2" >> build/testfile.txt
-          cat build/textfile.txt
+          cat build/testfile.txt
