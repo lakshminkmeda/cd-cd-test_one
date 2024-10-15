@@ -32,11 +32,12 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
-        run: echo "Hello World"
-              - echo "Hello Again"
-              - mkdir build
-              - touch build/testfile.txt
-              - echo "Test 1" >> build/testfile.txt
-              - cat mkdir/textfile.txt
-              - echo "Test 2" >> build/testfile.txt
-              - cat build/textfile.txt
+        run: | 
+          echo "Hello World"
+          echo "Hello Again"
+          mkdir build
+          touch build/testfile.txt
+          echo "Test 1" >> build/testfile.txt
+          cat mkdir/textfile.txt
+          echo "Test 2" >> build/testfile.txt
+          cat build/textfile.txt
