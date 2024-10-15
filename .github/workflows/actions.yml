@@ -47,11 +47,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - name: Production Phase
-        run: |
-          echo "This is production phase"
-          test -f build/testfile.txt
       - name: Download artifact from build
         uses: actions/download-artifact@v4 
         with: 
           name: my-artifact
+      - name: Production Phase
+        run: |
+          echo "This is production phase"
+          test -f build/testfile.txt
