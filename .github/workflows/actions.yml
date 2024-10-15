@@ -35,6 +35,9 @@ jobs:
           echo "Test 2" >> build/testfile.txt
           cat build/testfile.txt
           echo "The testing is completed, moving to production"
+        artifacts:
+          paths:
+            build
 
   test-code:
     runs-on: ubuntu-latest
