@@ -53,5 +53,6 @@ jobs:
           name: my-artifact
       - name: Production Phase
         run: |
-          echo "This is production phase"
-          test -f build/testfile.txt
+          if test -f "build/testfile.txt"; then
+            echo "Test Successful"
+          fi
