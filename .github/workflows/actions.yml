@@ -36,7 +36,7 @@ jobs:
               - echo "Hello Again"
               - mkdir build
               - touch build/textfile.txt
-              - echo "Test 1" >> mkdir/testfile.txt
+              - echo "Test 1" >> build/testfile.txt
               - cat mkdir/textfile.txt
-              - echo "Test 2" >> mkdir/testfile.txt
-              - cat mkdir/textfile.txt
+              - echo "Test 2" >> build/testfile.txt
+              - cat build/textfile.txt
